@@ -74,13 +74,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-end",
     padding: theme.spacing(0, 1),
-    // backgroundColor: 'red',
+    // fontFamily: "Poppins",
     // necessary for content to be below app bar
     ...theme.mixins.toolbar
   },
   content: {
     flexGrow: 1,
     padding: theme.spacing(3)
+    // fontFamily: "Poppins",
   }
 }));
 

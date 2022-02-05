@@ -1,5 +1,6 @@
 import React from "react";
 // import { StrictMode } from "react";
+// import "@fontsource/poppins";
 import { BrowserRouter } from "react-router-dom";
 
 import ReactDOM from "react-dom";

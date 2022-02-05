@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-
 import { useRoutes } from "react-router-dom";
 import HomeView from "./views/Home/Home";
 import AboutView from "./views/About";
@@ -8,6 +7,13 @@ import NavBar from "./layouts/Dashboard/NavBar";
 // import { createBrowserHistory } from "history";
 // import { renderRoutes } from "react-router-config";
 // import routes from "./routes";
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: ["Poppins"].join(",")
+  }
+});
 
 // const history = createBrowserHistory();
 
@@ -73,7 +79,11 @@ function App() {
     }
   ];
   let newRoutes = useRoutes(routes);
-  return <>{newRoutes}</>;
+  return (
+    <ThemeProvider theme={theme}>
+      <>{newRoutes}</>
+    </ThemeProvider>
+  );
   // return (
   //   <Routes>
   //     <Route path="/" element={<NavBar />}>
