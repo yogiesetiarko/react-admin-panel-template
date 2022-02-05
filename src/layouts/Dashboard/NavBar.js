@@ -74,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-end",
     padding: theme.spacing(0, 1),
+    // backgroundColor: 'red',
     // necessary for content to be below app bar
     ...theme.mixins.toolbar
   },
@@ -124,7 +125,12 @@ export default function MiniDrawer() {
           [classes.appBarShift]: open
         })}
       >
-        <Toolbar>
+        <Toolbar
+          style={{
+            backgroundColor: "#0996FF",
+            color: "#FCE4B0"
+          }}
+        >
           <IconButton
             color="inherit"
             aria-label="open drawer"

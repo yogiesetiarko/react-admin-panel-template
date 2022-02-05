@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import { useRoutes, Routes, Route } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import HomeView from "./views/Home/Home";
 import AboutView from "./views/About";
 import NavBar from "./layouts/Dashboard/NavBar";
