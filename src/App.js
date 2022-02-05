@@ -62,6 +62,11 @@ function App() {
       ]
     },
     {
+      path: "/auth",
+      element: <NavBar />,
+      children: [{ path: "/auth/login", element: <div>Login ini</div> }]
+    },
+    {
       path: "/aaa",
       element: <NavBar />,
       children: [{ index: true, element: <div>home inside aaa</div> }]
